@@ -38,9 +38,14 @@ routes.config(['$stateProvider', '$urlRouterProvider', '$ocLazyLoadProvider', fu
         }
     }).state('app.tab1.tab12', {
         url: '/tab12',
-        templateUrl: 'views/tab12.html'
+        templateUrl: 'views/tab12.html',
+        controller:'tab12',
+        resolve:{
+            dep: ['$ocLazyLoad',function ($ocLazyLoad) {
+                return $ocLazyLoad.load(['js/controller/tab12.js'])
+            }]
+        }
     })
-
     $urlRouterProvider.otherwise('/app');
 }]);
 
