@@ -1,0 +1,52 @@
+.video-player{
+  width:400px;
+  height:300px;
+  position:relative;
+  font-size: 16px;
+  border:1px solid #ddd;
+  video{
+    width:400px;
+    height:300px;
+    position:absolute;
+  }
+  .video-play{
+    width:20px;height:20px;
+    background:#333;
+    position:absolute;
+    bottom:5px;
+    left:5px;
+
+  }
+  .video-progress{
+    height:20px;
+    width:300px;
+    position:absolute;
+    bottom:5px;
+    left:30px;
+    background:#ddd;
+    .video-time-bar{
+      width:100px;
+      height:20px;
+      position:absolute;
+      left:0;
+      bottom:0;
+      background:#333;
+    }
+  }
+  .video-volume{
+    width:30px;
+    height:100px;
+    background:#ddd;
+    position:absolute;
+    right:5px;
+    bottom:5px;
+    .video-volume-val{
+      position:absolute;
+      width:30px;
+      height:30px;
+      background:#333;
+      bottom:0;
+    }
+  }
+
+}

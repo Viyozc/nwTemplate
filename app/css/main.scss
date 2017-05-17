@@ -1,8 +1,22 @@
 @import './components/reset';
-
+@import './components/player';
 
 h1{
   color:#2aabd2;
+}
+
+#main-title{
+  position:absolute;
+  left:0;right:0;
+  top:0;
+  height:50px;
+  background:#000;
+  z-index:99999;
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+}
+div{
+  -webkit-app-region: no-drag;
 }
 //
 ///*

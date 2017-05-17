@@ -1,7 +1,11 @@
 /**
  * Created by hlkjsen on 2017/4/25.
  */
-var app = angular.module('app',['routes']);
+
+
+
+
+var app = angular.module('app',['routes','directives']);
 
 app.config(['$ocLazyLoadProvider', '$compileProvider', function($ocLazyLoadProvider, $compileProvider) {
     // 解决 nw 中 图片无法正常显示问题

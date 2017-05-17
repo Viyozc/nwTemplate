@@ -7,8 +7,8 @@
   "keywords": [ "editor", "NW.js" ],
   "nodejs": true,
   "window": {
-    "toolbar": true,
-    "frame": true,
+    "toolbar": false,
+    "frame": false,
     "icon": "assets/img/logo_bird.png",
     "position": "center",
     "min_width": 1200,
